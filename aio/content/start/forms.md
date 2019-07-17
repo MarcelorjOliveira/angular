@@ -35,6 +35,11 @@ First, you'll set up the checkout form model. The form model is the source of tr
 
 1. During checkout, the app will prompt the user for a name and address. So that you can gather that information later, set the `checkoutForm` property with a form model containing `name` and `address` fields, using the `FormBuilder#group()` method.
 
+In
+    <code-example header="src/app/cart/cart.component.ts" path="getting-started/src/app/cart/cart.component.ts" region="checkout-form-group" linenums="false">
+There is a error in  this.checkoutForm = this.formBuilder.group({
+Correct should be  this.checkoutForm = formBuilder.group({
+  
     <code-example header="src/app/cart/cart.component.ts" path="getting-started/src/app/cart/cart.component.ts" region="checkout-form-group" linenums="false">
     </code-example>
 
